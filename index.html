@@ -191,8 +191,8 @@
     <ol class="carousel-indicators">
       <li data-target=".carousel" data-slide-to="0" class="active"></li>
       <li data-target=".carousel" data-slide-to="1" class=""></li>
-      <li data-target=".carousel" data-slide-to="2" class=""></li>
-      <li data-target=".carousel" data-slide-to="3" class=""></li>
+      <!-- <li data-target=".carousel" data-slide-to="2" class=""></li>
+      <li data-target=".carousel" data-slide-to="3" class=""></li> -->
       <button id="toggleCarousel"><span class="glyphicon glyphicon-pause" aria-hidden="true"></span></button>
     </ol>
     <div class="carousel-inner" role="listbox">
@@ -223,8 +223,8 @@
     			<div class="row">
     				<div class="col-sm-12">
     					<div class="text-indent text-indent-h1 animated fadeInUp">
-    						<h1>Solution Driven <br><span>Pacific Focused</span></h1>
-    						<p>A community dedicated to the advancement of knowledge through teaching, research and engagement.</p>
+							<h1>Physics<br><span>Outreach</span></h1>
+    						<p>Our future lies with today's kids and tomorrow's space exploration - Sally Ride</p>
     						<a class="btn btn-lg btn-default" href="#" role="button" data-h1="" data-module="hero-homepage">Learn More</a>
     					</div>
     				</div>
@@ -232,48 +232,6 @@
           </div>
     		</div>
       </div>
-
-
-
-      <div class="item rt-dark-blue">
-        <img  src="./img/trident-trns.png">
-
-        <div class="container">
-          <div class="cr-item-container">
-    			<div class="row">
-    				<div class="col-sm-12">
-    					<div class="text-indent text-indent-h1 animated fadeInUp">
-    						<h1>Solution Driven <br><span>Pacific Focused</span></h1>
-    						<p>A community dedicated to the advancement of knowledge through teaching, research and engagement.</p>
-    						<a class="btn btn-lg btn-default rt-btn-gold" href="http://google.com/" role="button" data-h1="" data-module="hero-homepage">Learn More</a>
-    					</div>
-    				</div>
-    			</div>
-        </div>
-    		</div>
-
-      </div>
-
-      <div class="item rt-dark-blue">
-
-        <img class="first-slide" src="./img/lib-trns.png">
-
-        <div class="container">
-          <div class="cr-item-container">
-    			<div class="row">
-    				<div class="col-sm-12">
-    					<div class="text-indent text-indent-h1 animated fadeInUp">
-    						<h1>Solution Driven <br><span>Pacific Focused</span></h1>
-    						<p>A community dedicated to the advancement of knowledge through teaching, research and engagement.</p>
-    						<a class="btn btn-lg btn-default" href="http://google.com/" role="button" data-h1="" data-module="hero-homepage">Learn More</a>
-    					</div>
-    				</div>
-    			</div>
-        </div>
-    		</div>
-
-      </div>
-
     </div>
 
     <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
@@ -465,36 +423,11 @@
 <script src="https://www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
 
 <script src="./scripts/vendor.min.js"></script>
-<script src="./scripts/widgets/fullcalendar.min.js"></script>
 
 <script src="./scripts/base.min.js"></script>
 
-<script>
-
-$(document).ready(function() {
-
-	$('#calendar').fullCalendar({
-	header: {
-		left: 'prev,next today',
-		center: 'title',
-		right: 'month,basicWeek,basicDay'
-	},
-	themeSystem: 'bootstrap3',
-	defaultDate: new Date().toLocaleDateString(),
-	navLinks: true, // can click day/week names to navigate views
-	editable: true,
-	eventLimit: true, // allow "more" link when too many events
-	events: [
-		{
-		title: 'All Day Event',
-		start: '2018-03-01'
-		},
-	]
-	});
-
-});
-	
-</script>
+<script src="./scripts/widgets/fullcalendar.min.js"></script>
+<script src="./calendar/calendar.js"></script>
 	
 
 </body>
